@@ -3,24 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- This link tag is used to set a custom favicon for the webpage. -->
     <link
       rel="shortcut icon"
       href="/Frontend/src/assets/DYC Logo/logo.favicon"/>
+
+    <!-- This link tag is used to include the AOS (Animate On Scroll) library, which provides simple animations for elements as they scroll into view. -->
+    <!-- The href attribute specifies the path to the AOS CSS file. -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- This link tag is used to include the custom CSS file for the webpage. -->
     <link href="Frontend/src/styles/output.css" rel="stylesheet">
+
     <title>DYC Architectures</title>
   </head>
   <body>
     
+    <!-- This section represents the hero section of the webpage. It includes the navigation bar, sidebar, and hero text. -->
     <div class="hero">
+      <!-- The navigator div contains the logo and the main navigation links. It uses AOS (Animate On Scroll) for animation. -->
       <div class="navigator" data-aos="fade-down" data-aos-duration="2000">
+        <!-- The links div contains the list of navigation links. It also uses AOS for animation. -->
         <div class="links"data-aos="fade-down" data-aos-duration="2000">
           <ul>
+            <!-- The logo div contains the logo image and a link to the home page. -->
             <div class="logo">
               <a href="/index.html">
               <img src="/Frontend/src/assets/DYC Logo/webl.png" alt="Logo" />
               </a>
             </div>
+            <!-- The list items represent the main navigation links. Each link leads to a different webpage. -->
             <li><a href="/index.html">Home</a></li>
             <li><a href="/Frontend/src/pages/Projects.html">Projects</a></li>
             <li><a href="/Frontend/src/pages/About.html">About</a></li>
@@ -28,6 +40,7 @@
           </ul>
         </div>
       </div>
+      <!-- The snbar div contains a sidebar with contact information. It uses AOS for animation. -->
       <div class="snbar"data-aos="fade-left" data-aos-duration="3000">
         <p>In need of design inspiration or looking for expert consultation?</p>
         <br />
@@ -35,6 +48,7 @@
           <u><a href="/Frontend/src/pages/About.html#contact">Contact Now</a></u>
         </p>
       </div>
+      <!-- The hero-text div contains the main heading and tagline of the webpage. -->
       <div  class="hero-text">
         <h1>DYC ARCHITECTS</h1>
         <p>
@@ -42,6 +56,7 @@
           eco friendly designs.
         </p>
       </div>
+
       <a href="#sec-2">
         <img class="arrow" src="/Frontend/src/assets/DYC Logo/down.png" />
       </a>
@@ -61,7 +76,7 @@
 
         </div>
         <div class="us-img" data-aos="zoom-in" data-aos-duration="2000">
-          <div
+          <div 
             class="carousel carousel-center bg-white rounded-box max-w-md space-x-4 p-4"
           >
             <div class="carousel-item">
@@ -201,6 +216,15 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     <script src="/Frontend/index.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      chat-icon="https://i.ibb.co/217jFVH4/DYC-ARCHITECTS-logo.jpg"
+      intent="WELCOME"
+      chat-title="DYC_ASSISTANT"
+      agent-id="6df7ab19-c81b-4e6b-9eec-13653ca8344f"
+      language-code="en"
+      wait-open="true">
+    </df-messenger>
   </body>
 </html>
 
